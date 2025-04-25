@@ -9,8 +9,7 @@ import jakarta.persistence.Id;
 public class Product {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO, generator = "system-uuid")
-    @org.hibernate.annotations.UuidGenerator
+    @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
     private String name;
     private String description;
