@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Email Template</title>
+    </head>
+    <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
+        <div style="max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px;">
+            <h2 style="color: #4CAF50;">Hello, <span th:text="${to}"></span>!, from <span th:text="${sender}"></span></h2>
+            <p>Thank you for signing up for our service. We are excited to have you on board!</p>
+            <p>Your registration details are as follows:</p>
+            <ul>
+                <li><strong>Email:</strong> <span th:text="${to}">
+                    </span></li>
+                <li><strong>Username:</strong> <span th:text="Semi"></span></li>
+                <li><strong>Registration Date:</strong> <span th:text="${registrationDate}"></span></li>
+            </ul>
+        </div>
+    </body>
+</html>
